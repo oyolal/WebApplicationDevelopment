@@ -1,2 +1,2 @@
 # WebApplicationDevelopment
-Exercises I have done while taking Web Application Development class
+Homeworks and In-class Exercises for Web Application Development Class
