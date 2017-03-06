@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>Inches Centimeters Conventer</title>
+<body>
+
+<h2>Length Converter</h2>
+<p>Enter Inch Value</p>
+
+<p>
+	  <label>Inches :</label>
+	  <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>cm: <span id="outputcm"></span></p>
+
+<script>
+	function LengthConverter(valNum) {
+	  document.getElementById("outputcm").innerHTML=valNum/0.39370;
+	}
+</script>
+
+<p></p>
+<p>Enter Cm Value</p>
+
+<p>
+	  <label>Centimeter :</label>
+	  <input id="inputcms" type="number" placeholder="Centimeters" oninput="cmconventer(this.value)" onchange="cmconventer(this.value)">
+</p>
+<p>cm: <span id="outputinch"></span></p>
+
+<script>
+	function cmconventer(valNum) {
+	  document.getElementById("outputinch").innerHTML=valNum/2.54;
+	}
+</script>
+</body>
+</html>

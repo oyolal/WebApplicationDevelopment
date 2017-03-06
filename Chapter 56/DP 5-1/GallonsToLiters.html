@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallons Liters Convernter</title>
+</head>
+<body>
+	<h2>Gallon to Liter Converter</h2>
+	<p>Enter Gallon Value</p>
+
+	<p>
+		  <label>Gallon :</label>
+		  <input id="inputGallons" type="number" placeholder="Gallons" oninput="LiterConverter(this.value)" onchange="LiterConverter(this.value)">
+	</p>
+	<p>cm: <span id="outputlt"></span></p>
+
+	<script>
+		function LiterConverter(valNum) {
+		  document.getElementById("outputlt").innerHTML=valNum/0.264172;
+		}
+	</script>
+
+
+	<p>Enter Liter Value</p>
+
+	<p>
+		  <label>Liter :</label>
+		  <input id="inputGallons" type="number" placeholder="Gallons" oninput="Gallonconverter(this.value)" onchange="Gallonconverter(this.value)">
+	</p>
+	<p>cm: <span id="outputgl"></span></p>
+
+	<script>
+		function Gallonconverter(valNum) {
+		  document.getElementById("outputgl").innerHTML=valNum/3.78541;
+		}
+	</script>
+</body>
+</html>
