@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interview form</title>
+</head>
+<body>
+	<h1>Interview Form</h1>
+	<h2>Interview information</h2>
+	<form action="mailto:email_address" method="post"
+	enctype="text/plain">
+		<table>
+		<colgroup span="1" style="width: 100px"></colgroup>
+		<colgroup span="1" style="width: 150px">
+		</col group>
+		<tr><td>First Name</td><td><input type="text" size="75" name="name" /></td></tr>
+		<tr><td>Last Name</td><td><input type="text" size="75" name="lastname"></td></tr>
+		<tr><td>Position</td><td><input type="text" size="75" name="position"></td></tr>
+		</table>
+		date of interview:
+	 	<input type="date" name="date">
+	<h2>Candidate information</h2>
+		<tr>
+			<td>Want him/her to hired?</td>
+			<td><input type="radio" name="hire" value="donthire" />Do not Hire</td>
+			<td><input type="radio" name="hire" value="maybe hire" />maybe hire</td>
+			<td><input type="radio" name="hire" value="hire" />hire</td>
+		</tr>
+		<p>Comments<br/>
+		<textarea rows="6" cols="70">Enter your comments here</textarea></p>
+	<table border="solid black 1px">
+		<th colspan="6">Candidate skills</th>
+		<tr>
+			<td>Intellect</td>
+			<td><input type="radio" name="Intellect" value="Above avarage" />Above avarage</td>
+			<td><input type="radio" name="Intellect" value="Avarage" />Avarage</td>
+			<td><input type="radio" name="Intellect" value="Below avarage" />Below avarage</td>
+		</tr><br />
+		<tr>
+			<td>Communication</td>
+			<td><input type="radio" name="Communication" value="Above avarage" />Above avarage</td>
+			<td><input type="radio" name="Communication" value="Avarage" />Avarage</td>
+			<td><input type="radio" name="Communication" value="Below avarage" />Below avarage</td>
+		</tr><br />
+		<tr>
+			<td>Business skills</td>
+			<td><input type="radio" name="Business skills" value="Above avarage" />Above avarage</td>
+			<td><input type="radio" name="Business skills" value="Avarage" />Avarage</td>
+			<td><input type="radio" name="Business skills" value="Below avarage" />Below avarage</td>
+		
+		</tr><br />
+		<tr>
+			<td>Computer skills</td>
+			<td><input type="radio" name="Computer skills" value="Above avarage" />Above avarage</td>
+			<td><input type="radio" name="Computer skills" value="Avarage" />Avarage</td>
+			<td><input type="radio" name="Computer skills" value="Below avarage" />Below avarage</td>		
+		</tr>
+	</table>
+	<p><input type="reset" /><input type="submit" /></p>
+	</form>
+</body>
+</html>
