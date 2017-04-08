@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI</title>
+</head>
+<body>
+	<h1>BMI calculator</h1>
+
+	Weight(in pounds): <input type="text" value="0" id="num1"> <br/><br/>
+    Height(in inch): <input type="text" value="0" id="num2"> <br/><br/><br/>  
+    <button onclick="calcBMI()">Calculate the BMI</button> <br/><br/>      
+        BMI: <input type="text" value="0" id="result"> <br/>
+        <script type="text/javascript">
+            function calcBMI() {
+                    var value1 = parseInt(document.getElementById("num1").value);
+                    var value2 = parseInt(document.getElementById("num2").value);
+                var result = performBMI(value1,value2);
+                document.getElementById("result").value = result;           
+                function performBMI(num1,num2){
+                    return parseInt((num1*703)/(num2*num2));
+		        }
+            } 
+        </script>
+</body>
+</html>
