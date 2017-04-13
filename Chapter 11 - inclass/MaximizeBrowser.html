@@ -9,23 +9,22 @@
 		var maxWindow;
 		function createWindow() {
 		var winWidth=300;
-		}
-		var winHeight=lOO;
-		var w~nleft = (screen.width-winWidth)/2;
-		var w~nTop.= (screen.height-winHeight)/2;
-		var w1nOpt1ons =",width=" + winWidth;
-		winOptions +=",height="+ winHeight·
+		var winHeight=100;
+		var winleft = (screen.width-winWidth)/2;
+		var winTop = (screen.height-winHeight)/2;
+		var winOptions =",width=" + winWidth;
+		winOptions +=",height="+ winHeight;
 		winOptions +=",left="+ winleft;
-		winOptions += ",top="+ winTop;
-		maxWindow = window.open("MaxWindow.html"
-		"newWindow", winOptions);
+		winOptions +=",top="+ winTop;
+		maxWindow = window.open("MaxWindow.html" , "newWindow", winOptions);
 		maxWindow.focus();
-
+        }
 
 		function maximizeWindow() {
-			maxWindow.moveTo (O,O);
-			maxW1ndow.resizeTo(screen.availWidth, screen.availHeight);
-			maxW1ndow.focus();
+			maxWindow.moveTo(0,0);
+			maxWindow.resizeTo(screen.availWidth, screen.availHeight);
+			maxWindow.focus();
+		}
 	</script>
 
 
