@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<hl>Gosselin Greeting Cards</hl>
+	<h2>All Occasions</h2>
+	<hr />
+	<p><a href="valentine.jpg" onclick="showCard(' valentine. jpg'); return false">
+	Valentine's Day</a><br />
+	<a href="mothersday.jpg" onclick="showCard('mothersday.jpg');return false">
+	Mother's Day</a><br />
+	<a href="halloween.jpg" onclick="showCard(' halloween. jpg'); return false">
+	Halloween</a><br />
+	<a href="newyear.jpg" onclick="showCard('newyear.jpg');return false">
+	New Year</a><br />
+	<a href="birthday.jpg" onclick="showCard('birtt,day.jpg');return false">
+	Birthday</a></p>
+
+	<script type="text/javascript">
+		var cardWindow;
+		function showCard(linkTarget) {
+		var propertyWidth=400
+		}
+		var propertyHeight=350;
+		var winleft = (screen.width-propertyWidth)/2·
+		var winTop_= ( screen.height-propertyHeight)/2·
+		var winOptions = 
+		"toolbar=no,menubar-no location=no  scrollbars=yes, resizeable=no";
+		winOptions += ",width=" + propertyWidth; 
+		winOptions += ",height=" + propertyHeight;
+		winOptions += ",left="+ winleft;
+		winOptions += ",top="+ winTop;
+		cardWindow = window.open(linkTarget, cardlnfo , w1nOptions)·
+		cardWindow.focus();
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+
+	<script type="text/javascript">
+		var maxWindow;
+		function createWindow() {
+		var winWidth=300;
+		}
+		var winHeight=lOO;
+		var w~nleft = (screen.width-winWidth)/2;
+		var w~nTop.= (screen.height-winHeight)/2;
+		var w1nOpt1ons =",width=" + winWidth;
+		winOptions +=",height="+ winHeight·
+		winOptions +=",left="+ winleft;
+		winOptions += ",top="+ winTop;
+		maxWindow = window.open("MaxWindow.html"
+		"newWindow", winOptions);
+		maxWindow.focus();
+
+
+		function maximizeWindow() {
+			maxWindow.moveTo (O,O);
+			maxW1ndow.resizeTo(screen.availWidth, screen.availHeight);
+			maxW1ndow.focus();
+	</script>
+
+
+
+</head>
+<body>
+</body>
+</html>

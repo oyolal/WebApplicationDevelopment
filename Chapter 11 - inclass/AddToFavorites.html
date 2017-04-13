@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var browserName = navigator.appName ;
+	var browserVer = parseInt(navigator.appVersion);
+	var linkText = "Add Course Technology to your favorites!";
+	var url = "http://www.course.com";
+	var pageName = "Course Technology";
+	var favlink = "";
+
+	if (browserName == "Microsoft Internet Explorer"
+	&& browserVer >= 4) {
+	
+	favlink = "<p><a href=\"javascript:window.external.AddFavorite(url, pageName)\"";
+	favlink += " onmouseover=\"window.status='";
+	favlink += linkText + "'; return true\"";
+	favlink += " onmouseout=\"window.status=";
+	favlink += "' '" + "; return true\"";
+	favlink += ">" + linkText + "</a></p>";
+	document .write(favlink);
+	
+	else
+	document .write("<p>Add Course Technology to your favorites! (Ctrl+D)</p>");
+	}
+
+
+</script>
+</body>
+</html>
