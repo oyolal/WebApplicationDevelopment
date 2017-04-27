@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Realtor Inquiry</title>
+
+	<script type="text/javascript">
+		function setFormFocus(){
+			document.forms[0].visitor_name.focus();
+		}
+		function validateForm(){
+			if(document.forms[0]['visitor_name'].value==""){
+				alert("Name must be filled out")
+				return false;
+			}
+			else if(document.forms[0]['email'].value==""){
+				alert("eamil must be filled out")
+				return false;
+			}
+			else if(document.forms[0]['phone'].value==""){
+				alert("phone must be filled out")
+				return false;
+			}
+			else if(document.forms[0]['area'].value==""){
+				alert("area must be filled out")
+				return false;
+			}
+			else if(document.forms[0]['feet'].value==""){
+				alert("feet must be filled out")
+				return false;
+			}
+			else if(document.forms[0]['price'].value==""){
+				alert("price must be filled out")
+				return false;
+			}
+			else if(document.forms[0]['bedrooms'].value==""){
+				alert("bedrooms must be filled out")
+				return false;
+			}
+			else if(document.forms[0]['property_type'].value=="unselected"){
+				alert("property_type must be filled out")
+				return false;
+			}
+		}
+	</script>
+
+
+
+
+
+</head>
+<body onload="setFormFocus();">
+<h1>Real Estate Inquirty</h1>
+<form action="FormProcessor.html" method="get" enctype="application/x-www-form-urlencoded" onsubmit="return validateForm();">
+	<p>Name<br />
+	<input type="text" value="Enter your name" name="visitor_name" size="50"  onclick="if(this.value=='Enter your name') this.value='';" /></p>
+	<p>Email Address <br />
+	<input type="text" name="email" size="50" value="Enter your e-mail address" onclick="if(this.value=='Enter your e-mail address') this.value='';"/></p>
+	<p>Phone<br />
+	<input type="text" name="phone" size = "50" value="Enter your phone" onclick="if(this.value=='Enter your phone') this.value='';"/></p>
+	<p>Area of town<br />
+	<input type="text" name="area" size="50 " value="What area of town are you interested in?" onclick="if(this.value=='What area of town are you interested in?') this.value='';" /></p>
+	<p>Property <select name="property_type" >
+		<option value="unselected">Select a Property Typle</option>
+		<option value="condo">Condos</option>
+		<option value="single">Single Family Homes</option>
+		<option value="multi">Multifamily homes</option>
+		<option value="mobile">Mobile Homes</option>
+		<option value="land">Land</option>
+		</select>
+		Sq. feet <input type="text" name="feet" size="5" value="???" onclick="if(this.value=='???') this.value='';">
+	</p>	
+	<p>Bedrooms <input type="text" name="bedrooms" size="5" value="???" onclick="if(this.value=='???') this.value='';"/>Maximum price <input type="text" name="price" size="5" value="$$$" onclick="if(this.value=='$$$') this.value='';"></p>
+	<p>How should we contact you?<input type="radio" name="contactHow" value="call_me" checked required>Call me <input type="radio" name="e_mail_me">Email me</p>
+	<p><input type="submit" ></p>
+
+
+
+
+
+
+
+
+
+</form>
+
+</body>
+</html>

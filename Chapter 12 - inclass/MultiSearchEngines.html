@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Search Engines</title>
+	<script type="text/javascript">
+		function doSearch(){
+			var selectedItem = document.searchForm.engines.selectedIndex;
+			if (selectedItem == -1)
+				window.alert('you must select a search engine.');
+			else
+				location.href = document.searchForm.engines.options[selectedItem].value+document.searchForm.searchTerm.value;
+		}
+	</script>
+</head>
+<body>
+<form action="" name="searchForm">
+	<p>Search for <input type="text" name="searchTerm" />
+	form <select name='engines'>
+	<option value='http://www.altavista.com/cgi-bin/query?kl=XX&amp;pgz=q&amp; Translate=on&amp;q='>Alta Vista</option>
+	<option value="http://search.aol.com/dirsearch.adp?query=">AOL</option>
+	<option value="http://www.google.com/search?q=">Google</option>
+	<option value="http://search.lycos.com/web/?q=">Lycos</option>
+	<option value="http://search.yahoo.com/search?p=">Yahoo!</option>
+	 </select>
+
+	 <input type="button" value="Search" onclick="doSearch()"></p>
+</form>
+</body>
+</html>
